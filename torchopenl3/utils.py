@@ -1,5 +1,8 @@
 import julius
-import resampy
+try:
+    import resampy
+except ImportError:
+    pass
 import torch
 import logging
 
