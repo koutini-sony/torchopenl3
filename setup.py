@@ -1,10 +1,6 @@
-import imp
 import os
 from setuptools import find_packages, setup
-
-version = imp.load_source(
-    "torchopenl3.version", os.path.join("torchopenl3", "version.py")
-)
+from torchopenl3 import version
 
 with open("README.md") as file:
     long_description = file.read()
