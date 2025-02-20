@@ -35,7 +35,7 @@ setup(
         "numpy>=1.13.0",
         "scipy>=0.19.1",
         "soundfile",
-        "resampy>=0.2.1,<0.3.0",
+        #"resampy>=0.2.1,<0.3.0",
         #'scikit-image>=0.14.3,<0.15.0',
         "torch>=1.4.0",
         "nnAudio>=0.2.4",
