@@ -1,13 +1,17 @@
 import os
 from setuptools import find_packages, setup
-from torchopenl3 import version
+
 
 with open("README.md") as file:
     long_description = file.read()
 
+version = {}
+with open(os.path.join("torchopenl3", "version.py")) as f:
+    exec(f.read(), version)
+
 setup(
     name="torchopenl3",
-    version=version.version,
+    version=version["version"],
     description="Deep audio and image embeddings, based on Look, Listen, and Learn approach Pytorch",
     long_description=long_description,
     long_description_content_type="text/markdown",
